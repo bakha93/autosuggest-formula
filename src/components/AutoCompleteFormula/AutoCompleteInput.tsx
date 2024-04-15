@@ -40,7 +40,7 @@ export const AutoCompleteInput = memo(() => {
             return [
               ...acc,
               {
-                type: SUPPORTED_FORMULAS.includes(el) ? "function" : "value",
+                type: SUPPORTED_FORMULAS.includes(el as never) ? "function" : "value",
                 name: el,
               },
             ];

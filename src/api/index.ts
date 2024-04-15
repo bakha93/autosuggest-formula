@@ -1,17 +1,6 @@
 import { useQuery } from "react-query";
-import { AutocompleteItem } from "@/components/AutoSuggestFormula/store.ts";
+import {AutocompleteItem} from "@/components/AutoCompleteFormula/store.ts";
 
-// export const useGetAutocompleteData = (onSuccess: (data: AutocompleteItem[]) => void) => {
-//   return useQuery(
-//     "autocompleteItems",
-//     async () => {
-//       return await fetch(
-//         "https://652f91320b8d8ddac0b2b62b.mockapi.io/autocomplete",
-//       ).then((data) => data.json());
-//     },
-//     { onSuccess: (data) =>  onSuccess(data)},
-//   );
-// };
 export const useGetAutocompleteData = (
   onSuccess: (data: AutocompleteItem[]) => void,
 ) => {
